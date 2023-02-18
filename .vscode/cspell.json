@@ -1,0 +1,23 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "cspell.json",
+    ".github/workflows/**",
+    ".vscode/*.json",
+    "**/*.{json,snap}",
+    "**/**/CHANGELOG.md",
+    "**/**/CONTRIBUTORS.md",
+    "**/coverage/**",
+    "**/dist/**",
+    "**/node_modules/**",
+    "packages/website/.docusaurus/**",
+    "packages/website/build/**",
+    "packages/website/src/vendor/**",
+    "yarn.lock",
+    "tsconfig.json",
+    "package.json",
+    "package-lock.json"
+  ],
+  "words": ["Parens"]
+}

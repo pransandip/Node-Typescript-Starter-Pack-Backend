@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "lint": "npx eslint .",
+    "prepare": "husky install",
     "format": "npx prettier --write .",
     "prod": "node --watch ./dist/index.js",
-    "start": "ts-node-dev --respawn src/index.ts",
-    "prepare": "husky install"
+    "start": "ts-node-dev --respawn src/index.ts"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
@@ -23,6 +24,8 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
     "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",

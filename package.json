@@ -4,16 +4,16 @@
   "description": "Test server for typescript support",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc -p tsconfig.prod.json",
     "lint": "npx eslint .",
     "prepare": "husky install",
     "format": "npx prettier --write .",
     "git-update": "git add -A && npx cz",
     "prod": "node --watch ./dist/index.js",
+    "build": "npx tsc -p tsconfig.prod.json",
     "start": "ts-node-dev --respawn src/index.ts"
   },
   "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
+    "*": "npx prettier --ignore-unknown --write"
   },
   "author": "@sandy",
   "license": "ISC",
@@ -28,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "commitizen": "^4.3.0",
+    "cspell": "^6.26.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",

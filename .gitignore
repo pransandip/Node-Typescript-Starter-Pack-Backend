@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 
-
 # files
 /dist/**/*.d.ts
 /dist/**/*.map

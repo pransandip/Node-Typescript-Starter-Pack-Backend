@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint .",
-    "prepare": "husky install",
+    "lint:fix": "npx eslint . --fix",
     "format": "npx prettier --write .",
     "git-update": "git add -A && npx cz",
     "prod": "node --watch ./dist/index.js",
     "build": "npx tsc -p tsconfig.prod.json",
-    "start": "ts-node-dev --respawn src/index.ts"
+    "start": "ts-node-dev --respawn src/index.ts",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*": "npx prettier --ignore-unknown --write"
+    "*": "prettier --ignore-unknown --write",
+    "src/**/*.ts": "npx eslint"
   },
   "author": "@sandy",
   "license": "ISC",

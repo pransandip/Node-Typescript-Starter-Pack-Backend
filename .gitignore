@@ -4,12 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-/dist
+
 
 # files
-# /dist/**/*.d.ts
-# /dist/**/*.js
-# /dist/**/*.map
+/dist/**/*.d.ts
+/dist/**/*.map
 
 # testing
 /coverage

@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 
 const app: Express = express();
-const PORT = 8000;
+const PORT = 4000;
 let count = 0;
 
 app.get('/', (req: Request, res: Response) => {
@@ -12,5 +12,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`TS: server is running on port!! ${PORT}.`);
+  console.log(`TS: server is running on port 🚀 ${PORT}.`);
 });
